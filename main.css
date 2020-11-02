@@ -4,7 +4,8 @@
 body{
     margin: 0;
 }
-main{
+/*-----------------MENU-------------------*/
+header{
     background-color: rgb(255, 192, 23);
     margin: 0 auto;
     width: 100%;
@@ -26,7 +27,7 @@ nav{
 nav ul{
     list-style-type: none;
     display: flex;
-    width: 70%;
+    width: 35%;
     text-align: center;
     justify-content: flex-start;
     align-items: center;
@@ -42,9 +43,68 @@ nav ul li a{
     padding: 7px 8px 9px;
     text-align: center;
     border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 350px;
+    height: 18px;
 }
 #buttonNav a{
     color: white;
+
+}
+/*---------------PORTADA------------------*/
+#portada{
     width: 100%;
 
+    background-color: rgb(255, 192, 23);
+    border-bottom: 1px solid black;
+    height: 500px;
+}
+#flexportada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#texto{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 7%;
+
+}
+a{
+    color: black;
+}
+a#button{
+    text-decoration: none;
+    border: 1px solid black;
+    width: 100px;
+    align-self: flex-start;
+    text-align: center;
+    padding: 7px 8px 9px;
+    border-radius: 5px;
+}
+h1{
+    line-height: 74px;
+    font-size: 70px;
+}
+h2{
+    line-height: 24px;
+    font-size: 18px;
+}
+#img{
+    background-image: url(Media/foto.png);
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 50%;
+}
+h1, h2, #button{
+    align-self: center;
 }
