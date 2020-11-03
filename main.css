@@ -54,9 +54,9 @@ nav ul li a{
 
 }
 /*---------------PORTADA------------------*/
+
 #portada{
     width: 100%;
-
     background-color: rgb(255, 192, 23);
     border-bottom: 1px solid black;
     height: 500px;
@@ -66,18 +66,22 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 100%;
 }
 #texto{
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: 7%;
 
+}
+#titulo{
+    width: 50%;
+    align-self: flex-start;
 }
 a{
     color: black;
@@ -94,17 +98,101 @@ a#button{
 h1{
     line-height: 74px;
     font-size: 70px;
+    margin-top: 0px;
 }
 h2{
     line-height: 24px;
     font-size: 18px;
-}
-#img{
-    background-image: url(Media/foto.png);
-    background-repeat: no-repeat;
-    height: 400px;
-    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 h1, h2, #button{
     align-self: center;
+}
+
+/*-------------------------Trending----------------*/
+#trending{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    border-bottom: 1px solid lightgray;
+}
+.apartado{
+    width: 33%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.numero{
+    color: grey;
+    width: 10%;
+    font-size: 18px;
+}
+.title1{
+    font-size: 16px;
+}
+.title2{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*-------------------Final-DIVS-------------*/
+#contenidoSec{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+
+}
+.contenidoPrincipal{
+    margin-top: 15px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.fotoContenido{
+    width: 20%;
+}
+.titulo1{
+    font-weight: bold;
+    font-size: 24px;
+}
+.titulo2, .footer{
+    color: gray;
+}
+/*--------------DICOVER----------*/
+#discoverMore{
+    display: flex;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    padding-bottom: 24px;
+    flex-direction: column;
+    width: 50%;
+}
+#categorias{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.elemento{
+    padding: 6px 16px;
+    border: 1px solid grey;
+    width: auto;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    margin-top: 0;
+    border-radius: 3px;
+    display: inline-block;
+}
+#more{
+    text-decoration: none;
+    color: green;
+    margin-top: 15px;
 }
