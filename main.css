@@ -196,3 +196,82 @@ h1, h2, #button{
     color: green;
     margin-top: 15px;
 }
+
+
+
+
+/*----------------MOBILE-----------------*/
+@media only screen and (max-width: 475px){
+    body{
+        width: 100%;
+    }
+    ul li a{
+        display: none;
+    }
+    ul li#buttonNav a{
+        display: block;
+    }
+    #buttonNav a{
+        width: 80px;
+        padding: 10px 20px;
+        align-self: center;
+    }
+    nav{
+        width: 80%;
+        margin: 0;
+    }
+    #portada{
+        width: 100%;
+        background-color: rgb(255, 192, 23);
+        height: 400px;
+    }
+    #texto{
+        width: 90%;
+        display: block;
+        margin-top: 25%;
+    }
+    #titulo{
+        width: 100%;
+    }
+    h1{
+        font-size: 36px;
+        line-height: unset;
+    }
+
+    #contenidoSec{
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 90%;
+    }
+    #discoverMore{
+        order: 1;
+        width: 100%;
+    }
+    #contDivs{
+        order: 2;
+    }
+    #categorias{
+        width: 90%;
+    }
+    .apartado{
+        width: 90%;
+        align-self: center;
+        margin: 0 auto;
+    }
+    #trending{
+        margin:0;
+        width: 100%;
+    }
+    #trending h2{
+        margin: 0 auto;
+    }
+    .fotoContenido{
+        align-self: center;
+    }
+    img{
+        width: 130px;
+    }
+    #divLogo{
+        margin-left: 19px;
+    } 
+}
